@@ -726,11 +726,6 @@ ul { list-style: none; }
   scroll-snap-type: none !important;
   scroll-behavior: auto !important;
 }
-.projects-scroll-track.is-dragging .project-card {
-  pointer-events: none;
-  transform: none !important;
-  transition: none !important;
-}
 .projects-scroll-track::-webkit-scrollbar {
   height: 6px;
 }

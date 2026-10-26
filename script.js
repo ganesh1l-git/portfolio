@@ -381,45 +381,54 @@ if (scrollTrack && prevBtn && nextBtn) {
 
   // Desktop Mouse Grab-to-Scroll
   let isDown = false;
+  let isDragging = false;
   let startX = 0;
   let scrollLeftStart = 0;
-  let dragDistance = 0;
 
   scrollTrack.addEventListener('mousedown', (e) => {
     if (e.button !== 0) return; // Only primary mouse button
+    // Never hijack clicks on interactive elements (links, buttons)
+    if (e.target.closest('a, button, input, textarea')) return;
+
     isDown = true;
-    dragDistance = 0;
+    isDragging = false;
     startX = e.pageX;
     scrollLeftStart = scrollTrack.scrollLeft;
-    scrollTrack.classList.add('is-dragging');
   });
 
   window.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     const dx = e.pageX - startX;
-    dragDistance += Math.abs(dx);
-    scrollTrack.scrollLeft = scrollLeftStart - dx;
+    // Only engage drag if the cursor has moved more than 6px
+    if (Math.abs(dx) > 6) {
+      if (!isDragging) {
+        isDragging = true;
+        scrollTrack.classList.add('is-dragging');
+      }
+      scrollTrack.scrollLeft = scrollLeftStart - dx;
+    }
   });
 
   const stopDrag = () => {
     if (!isDown) return;
     isDown = false;
     scrollTrack.classList.remove('is-dragging');
-    if (dragDistance > 10) {
+    if (isDragging) {
       setTimeout(() => {
+        isDragging = false;
         updateActiveState();
-      }, 60);
+      }, 50);
     }
   };
 
   window.addEventListener('mouseup', stopDrag);
 
-  // Suppress link click if user was dragging
+  // Suppress link click ONLY if user was actively dragging
   scrollTrack.addEventListener('click', (e) => {
-    if (dragDistance > 10) {
+    if (isDragging) {
       e.preventDefault();
       e.stopPropagation();
-      dragDistance = 0;
+      isDragging = false;
     }
   }, true);
 
