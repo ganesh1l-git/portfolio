@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Killari Ganesh | Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Killari Ganesh — Full Stack Developer skilled in React.js, Django, FastAPI, WebSockets and AI-powered platforms. B.Tech CSE, SIET, CGPA 8.3.">
+  <meta name="author" content="Killari Ganesh">
+  <meta property="og:title" content="Killari Ganesh | Full Stack Developer">
+  <meta property="og:description" content="Production-grade full-stack apps, real-time WebSocket systems, AI solutions & blockchain research.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230f172a'/><text y='72' x='50' font-family='Inter,sans-serif' font-size='52' font-weight='700' fill='%236366f1' text-anchor='middle'>KG</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-mark">KG</span>
+        <span class="logo-name">Killari Ganesh</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about"        class="nav-item">About</a>
+        <a href="#education"    class="nav-item">Education</a>
+        <a href="#research"     class="nav-item">Research</a>
+        <a href="#projects"     class="nav-item">Projects</a>
+        <a href="#skills"       class="nav-item">Skills</a>
+        <a href="#achievements" class="nav-item">Achievements</a>
+        <a href="#contact"      class="nav-item">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <button id="navResumeBtn" class="btn btn-ghost">Resume</button>
+        <a href="#contact" class="btn btn-primary">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+
+        <!-- Left: Text -->
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Open to Software Engineering Roles
+          </div>
+
+          <h1 class="hero-heading">
+            Hi, I'm<br>
+            <span class="hero-name">Killari Ganesh</span>
+          </h1>
+
+          <p class="hero-role">
+            <span class="role-prefix">I build </span>
+            <span class="role-cycling" id="roleCycling">Full Stack Web Apps</span>
+            <span class="role-cursor">|</span>
+          </p>
+
+          <p class="hero-bio">
+            Full Stack Developer with hands-on experience in <strong>React.js, Django, FastAPI, Spring Boot</strong> and <strong>WebSockets</strong>. I build production-grade systems with real-time concurrency, LLM integrations, and distributed architectures — backed by peer-reviewed security research.
+          </p>
+
+          <div class="hero-facts">
+            <div class="fact">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              B.Tech CSE — SIET &nbsp;·&nbsp; CGPA 8.3 / 10
+            </div>
+            <div class="fact">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Andhra Pradesh, India
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              View Projects
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <button id="heroResumeBtn" class="btn btn-outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV
+            </button>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/ganesh-killari" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://github.com/ganesh1l-git" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="mailto:ganeshkillari7624@gmail.com" class="social-link" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Photo -->
+        <div class="hero-photo-wrap">
+          <div class="photo-frame">
+            <img src="./assets/ganesh.jpg" alt="Killari Ganesh" class="hero-photo">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- ═══════════════════ ABOUT ═══════════════════ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Building scalable systems at the<br>intersection of <span class="text-accent">web &amp; AI</span></h2>
+
+        <div class="about-grid">
+          <div class="about-bio">
+            <p>
+              I'm a results-driven <strong>Full Stack Developer</strong> graduating in May 2026 from Siddharth Institute of Engineering and Technology with a CGPA of 8.3. My strength lies in architecting and shipping end-to-end web systems — from pixel-perfect React frontends to high-concurrency Django/FastAPI backends.
+            </p>
+            <p>
+              I engineered <em>TalentFlow</em>, a desktop AI recruitment platform using Electron, FastAPI, WebSockets, Gemini/Groq LLMs and Deepgram speech-to-text — and <em>YumYatra</em>, a real-time food delivery platform whose WebSocket backend cut order latency by 40%.
+            </p>
+            <p>
+              Beyond product engineering, I actively conduct research in Industrial IoT blockchain security, with a hybrid Raft-PBFT consensus model published in <strong>ISJEM</strong>.
+            </p>
+
+            <div class="about-details">
+              <div class="detail-row">
+                <span class="detail-key">Email</span>
+                <a href="mailto:ganeshkillari7624@gmail.com" class="detail-val link">ganeshkillari7624@gmail.com</a>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Phone</span>
+                <a href="tel:+919347561849" class="detail-val link">+91 93475 61849</a>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Location</span>
+                <span class="detail-val">Andhra Pradesh, India</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Stack</span>
+                <span class="detail-val">React · Django · FastAPI · Spring Boot · WebSockets</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards">
+            <div class="about-card">
+              <div class="about-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+              </div>
+              <h4>Full Stack Engineering</h4>
+              <p>React frontends, Django / FastAPI / Spring Boot REST APIs, real-time WebSocket systems, and Electron desktop apps.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <h4>Real-Time &amp; Concurrency</h4>
+              <p>Django Channels with 25+ concurrent WebSocket connections, Celery background queues, and Redis message brokers.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              </div>
+              <h4>AI &amp; LLM Integration</h4>
+              <p>Gemini &amp; Groq for JD analysis and resume screening, Deepgram for real-time speech-to-text with speaker diarization.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <h4>Security Research</h4>
+              <p>Hybrid Raft-PBFT &amp; P-CFT consensus models for Industrial IoT, Hyperledger Fabric oracle layers, and ISRO satellite security.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ EDUCATION ═══════════════════ -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <div class="section-label">Education</div>
+        <h2 class="section-title">Academic <span class="text-accent">Background</span></h2>
+
+        <div class="edu-card">
+          <div class="edu-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-body">
+            <div class="edu-top">
+              <div>
+                <h3 class="edu-degree">Bachelor of Technology — Computer Science &amp; Engineering</h3>
+                <p class="edu-school">Siddharth Institute of Engineering and Technology (SIET), Puttur, Andhra Pradesh</p>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-period">Nov 2022 – May 2026</span>
+                <span class="edu-cgpa">CGPA: 8.3 / 10</span>
+              </div>
+            </div>
+            <p class="edu-desc">
+              Specialisation in software engineering, algorithms, database systems, computer networks, operating systems, and distributed computing — maintained strong academics while leading development and research projects.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Data Structures &amp; Algorithms</span>
+              <span class="tag">OOP</span>
+              <span class="tag">DBMS (MySQL · Oracle)</span>
+              <span class="tag">Operating Systems</span>
+              <span class="tag">Computer Networks</span>
+              <span class="tag">Distributed Systems</span>
+              <span class="tag">Agile / Scrum</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ RESEARCH ═══════════════════ -->
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-label">Research &amp; Publication</div>
+        <h2 class="section-title">Peer-Reviewed <span class="text-accent">Publication</span></h2>
+
+        <div class="research-card">
+          <div class="research-header">
+            <span class="research-venue-badge">Published · ISJEM · Oct 2025 – Apr 2026</span>
+          </div>
+
+          <h3 class="research-title">
+            A Multi-Layer Framework for Secure and Scalable Permissioned Blockchain Integration in Industrial IoT Systems
+          </h3>
+          <p class="research-role"><strong>Role:</strong> Blockchain Security Researcher &nbsp;·&nbsp; Industrial IoT Systems</p>
+
+          <p class="research-abstract">
+            Designed a hybrid <strong>Raft-PBFT</strong> and <strong>P-CFT</strong> (Privacy-preserving Crash Fault Tolerant) consensus model for Industrial IoT networks. Proposed a multi-layered architecture with an <strong>oracle-based interoperability layer</strong> (Hyperledger Fabric) for secure cross-system data sharing.
+          </p>
+
+          <div class="research-metrics">
+            <div class="r-metric">
+              <span class="r-val">+28%</span>
+              <span class="r-label">Throughput</span>
+            </div>
+            <div class="r-metric">
+              <span class="r-val">−24%</span>
+              <span class="r-label">Latency</span>
+            </div>
+            <div class="r-metric">
+              <span class="r-val">+13%</span>
+              <span class="r-label">Fault Tolerance</span>
+            </div>
+          </div>
+
+          <ul class="research-points">
+            <li>Analysed permissioned blockchain frameworks and proposed an oracle gateway for cross-chain transaction management and off-chain data verification.</li>
+            <li>Evaluated Raft (fast leader-based replication), PBFT (Byzantine fault tolerance), and P-CFT (privacy-preserving) consensus zones against IIoT attack vectors.</li>
+          </ul>
+
+          <div class="research-actions">
+            <a href="https://isjem.com/download/a-multi-layer-framework-for-secure-and-scalable-permissioned-blockchain-integration-in-industrial-iot-systems/"
+               target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Read Paper on ISJEM
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ PROJECTS ═══════════════════ -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <!-- Section Header with Carousel Controls -->
+        <div class="projects-header-row">
+          <div>
+            <div class="section-label">Engineering Portfolio</div>
+            <h2 class="section-title" style="margin-bottom:0;">Featured <span class="text-accent">Projects</span></h2>
+          </div>
+          <div class="projects-carousel-nav">
+            <span class="carousel-hint">Swipe or scroll →</span>
+            <button class="carousel-btn" id="prevProjectsBtn" aria-label="Previous Projects">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="carousel-btn" id="nextProjectsBtn" aria-label="Next Projects">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4 Projects Horizontal Scroll Track -->
+        <div class="projects-scroll-wrapper">
+          <div class="projects-scroll-track" id="projectsScrollTrack">
+
+            <!-- TalentFlow -->
+            <article class="project-card featured">
+              <div class="project-top">
+                <div class="project-icon-wrap">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><line x1="16" y1="11" x2="22" y2="11"/><line x1="16" y1="15" x2="22" y2="15"/><path d="M19 8v6"/></svg>
+                </div>
+                <div class="project-links-top">
+                  <a href="https://github.com/ganesh1l-git/talent_Flow" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="View TalentFlow on GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-number">01</div>
+              <h3 class="project-title">TalentFlow</h3>
+              <p class="project-subtitle">AI-Powered Recruitment Desktop Platform</p>
+              <p class="project-desc">
+                End-to-end desktop recruitment automation platform using Electron + React + TypeScript frontend and FastAPI + PostgreSQL backend. Integrates Gemini &amp; Groq LLMs for JD parsing and resume screening, and conducts live AI interviews via real-time WebSockets with Deepgram speech-to-text and speaker diarization.
+              </p>
+
+              <ul class="project-highlights">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Live WebSocket interviews with adaptive LLM follow-up questions
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Celery + Redis for Google Forms/Sheets intake sync background jobs
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Automated candidate scoring, ranking, and recruiter analytics dashboard
+                </li>
+              </ul>
+
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="tag">Electron</span>
+                  <span class="tag">React</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">FastAPI</span>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">Gemini</span>
+                  <span class="tag">Groq</span>
+                  <span class="tag">Deepgram</span>
+                  <span class="tag">WebSockets</span>
+                  <span class="tag">Celery</span>
+                  <span class="tag">Redis</span>
+                </div>
+                <div class="project-btns">
+                  <a href="https://github.com/ganesh1l-git/talent_Flow" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                    GitHub
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- YumYatra -->
+            <article class="project-card featured">
+              <div class="project-top">
+                <div class="project-icon-wrap">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+                </div>
+                <div class="project-links-top">
+                  <a href="https://yum-yatra-eosin.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="View YumYatra Live">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-number">02</div>
+              <h3 class="project-title">YumYatra</h3>
+              <p class="project-subtitle">Real-Time Food Delivery Platform</p>
+              <p class="project-desc">
+                Full-stack food delivery web application replacing HTTP polling with persistent bidirectional WebSockets via Django Channels, reducing order processing latency by ~40%. Responsive glassmorphic UI with smooth state transitions across customer, restaurant, and courier views.
+              </p>
+
+              <ul class="project-highlights">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  25+ concurrent WebSocket channels with session authentication
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  40% reduction in order turnaround vs traditional REST polling
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Deployed and live on Vercel with full production stability
+                </li>
+              </ul>
+
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="tag">Django</span>
+                  <span class="tag">Django Channels</span>
+                  <span class="tag">WebSockets</span>
+                  <span class="tag">REST APIs</span>
+                  <span class="tag">HTML/CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Vercel</span>
+                </div>
+                <div class="project-btns">
+                  <a href="https://yum-yatra-eosin.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                    Live Demo
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- SalesSavvy -->
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-icon-wrap">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <div class="project-links-top">
+                  <a href="https://sales-savvy-gilt.vercel.app/customerhome" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="View SalesSavvy Live">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-number">03</div>
+              <h3 class="project-title">SalesSavvy</h3>
+              <p class="project-subtitle">AI-Powered Sales & CRM Platform</p>
+              <p class="project-desc">
+                A smart sales management platform with AI-driven insights, customer relationship tracking, and analytics dashboards. Built with React.js frontend and a robust backend, enabling sales teams to manage pipelines, track leads, and close deals faster.
+              </p>
+
+              <ul class="project-highlights">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Customer-facing portal with personalised product recommendations
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Real-time sales pipeline analytics and reporting dashboard
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Deployed live on Vercel with full production environment
+                </li>
+              </ul>
+
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="tag">React.js</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">REST APIs</span>
+                  <span class="tag">Analytics</span>
+                  <span class="tag">Vercel</span>
+                </div>
+                <div class="project-btns">
+                  <a href="https://sales-savvy-gilt.vercel.app/customerhome" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                    Live Demo
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PlacementFlow -->
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-icon-wrap">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+                </div>
+                <div class="project-links-top">
+                  <a href="https://placement-flow-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="View PlacementFlow Live">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-number">04</div>
+              <h3 class="project-title">PlacementFlow</h3>
+              <p class="project-subtitle">Campus Placement Management System</p>
+              <p class="project-desc">
+                A comprehensive placement management portal for colleges — tracking students, companies, interview schedules, and offer letters in one centralised platform. Streamlines the entire campus recruitment lifecycle from registration to selection.
+              </p>
+
+              <ul class="project-highlights">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Student profile management with resume upload and skill tracking
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Company drive scheduling with automated notifications
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Admin dashboard for placement statistics and reporting
+                </li>
+              </ul>
+
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="tag">React.js</span>
+                  <span class="tag">Django</span>
+                  <span class="tag">REST APIs</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">Vercel</span>
+                </div>
+                <div class="project-btns">
+                  <a href="https://placement-flow-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                    Live Demo
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Carousel Footer Controls -->
+          <div class="projects-scroll-footer">
+            <div class="carousel-dots" id="carouselDots">
+              <button class="dot active" data-index="0" aria-label="Go to project 1"></button>
+              <button class="dot" data-index="1" aria-label="Go to project 2"></button>
+              <button class="dot" data-index="2" aria-label="Go to project 3"></button>
+              <button class="dot" data-index="3" aria-label="Go to project 4"></button>
+            </div>
+            <span class="carousel-counter" id="carouselCounter">01 / 04</span>
+          </div>
+        </div>
+
+        <!-- Air Defence — Current Working Project -->
+        <div class="current-project-container">
+          <article class="project-card current-project">
+            <div class="project-top">
+              <div class="project-icon-wrap" style="background: rgba(63,185,80,0.12); color: #3fb950;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/><line x1="12" y1="2" x2="12" y2="22"/><polyline points="2 8.5 12 14 22 8.5"/></svg>
+              </div>
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span style="display:inline-flex; align-items:center; gap:6px; font-size:0.72rem; font-weight:600; color:#3fb950; background:rgba(63,185,80,0.1); border:1px solid rgba(63,185,80,0.25); padding:4px 12px; border-radius:999px; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.1em;">
+                  <span style="width:7px;height:7px;border-radius:50%;background:#3fb950;animation:pulse 2s ease-in-out infinite;"></span>
+                  Currently Building
+                </span>
+                <a href="https://ad-simulator-server-19yf.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="View Air Defence Simulator">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-number">05</div>
+            <h3 class="project-title">Air Defence Simulator</h3>
+            <p class="project-subtitle">Real-Time Military-Grade Threat Simulation Platform</p>
+            <p class="project-desc">
+              An advanced air defence simulation system providing real-time radar tracking, missile trajectory modelling, and intercept decision logic. Built with a server-side backend on Vercel handling live threat detection scenarios, threat classification, and defence response protocols — designed to simulate multi-vector attack and intercept sequences.
+            </p>
+
+            <ul class="project-highlights">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Real-time threat detection and intercept simulation engine
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Live server deployed on Vercel — currently in active development
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Multi-vector scenario modelling with configurable threat parameters
+              </li>
+            </ul>
+
+            <div class="project-footer">
+              <div class="project-stack">
+                <span class="tag">Simulation Engine</span>
+                <span class="tag">Real-Time Systems</span>
+                <span class="tag">WebSockets</span>
+                <span class="tag">Vercel</span>
+                <span class="tag">Defence Tech</span>
+              </div>
+              <div class="project-btns">
+                <a href="https://ad-simulator-server-19yf.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  View Server
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <span class="btn btn-sm btn-outline" style="cursor:default; opacity:0.75;">In Progress</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ SKILLS ═══════════════════ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-label">Technical Arsenal</div>
+        <h2 class="section-title">Skills &amp; <span class="text-accent">Technologies</span></h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              Languages
+            </h4>
+            <div class="skill-list">
+              <div class="skill-item"><span class="skill-name">Java</span><span class="skill-lvl excellent">Excellent</span></div>
+              <div class="skill-item"><span class="skill-name">JavaScript (ES6+)</span><span class="skill-lvl excellent">Excellent</span></div>
+              <div class="skill-item"><span class="skill-name">SQL</span><span class="skill-lvl excellent">Excellent</span></div>
+              <div class="skill-item"><span class="skill-name">Python</span><span class="skill-lvl good">Good</span></div>
+              <div class="skill-item"><span class="skill-name">TypeScript</span><span class="skill-lvl average">Average</span></div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+              Frontend &amp; Desktop
+            </h4>
+            <div class="skill-list">
+              <div class="skill-item"><span class="skill-name">React.js</span><span class="skill-lvl excellent">Excellent</span></div>
+              <div class="skill-item"><span class="skill-name">HTML5 &amp; CSS3</span><span class="skill-lvl excellent">Excellent</span></div>
+              <div class="skill-item"><span class="skill-name">Responsive Design</span><span class="skill-lvl excellent">Excellent</span></div>
+              <div class="skill-item"><span class="skill-name">Electron</span><span class="skill-lvl good">Good</span></div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              Backend &amp; APIs
+            </h4>
+            <div class="skill-list">
+              <div class="skill-item"><span class="skill-name">REST APIs</span><span class="skill-lvl excellent">Excellent</span></div>
+              <div class="skill-item"><span class="skill-name">WebSockets</span><span class="skill-lvl excellent">Excellent</span></div>
+              <div class="skill-item"><span class="skill-name">Spring Boot</span><span class="skill-lvl good">Good</span></div>
+              <div class="skill-item"><span class="skill-name">Django</span><span class="skill-lvl good">Good</span></div>
+              <div class="skill-item"><span class="skill-name">FastAPI</span><span class="skill-lvl good">Good</span></div>
+              <div class="skill-item"><span class="skill-name">Node.js</span><span class="skill-lvl good">Good</span></div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              Databases &amp; Caching
+            </h4>
+            <div class="skill-list">
+              <div class="skill-item"><span class="skill-name">MySQL</span><span class="skill-lvl excellent">Excellent</span></div>
+              <div class="skill-item"><span class="skill-name">PostgreSQL</span><span class="skill-lvl good">Good</span></div>
+              <div class="skill-item"><span class="skill-name">Oracle SQL</span><span class="skill-lvl good">Good</span></div>
+              <div class="skill-item"><span class="skill-name">Redis</span><span class="skill-lvl good">Good</span></div>
+              <div class="skill-item"><span class="skill-name">Firebase</span><span class="skill-lvl average">Average</span></div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              Tools &amp; DevOps
+            </h4>
+            <div class="skill-list">
+              <div class="skill-item"><span class="skill-name">Git &amp; GitHub</span><span class="skill-lvl excellent">Excellent</span></div>
+              <div class="skill-item"><span class="skill-name">Postman</span><span class="skill-lvl excellent">Excellent</span></div>
+              <div class="skill-item"><span class="skill-name">Docker</span><span class="skill-lvl good">Good</span></div>
+              <div class="skill-item"><span class="skill-name">Celery</span><span class="skill-lvl good">Good</span></div>
+              <div class="skill-item"><span class="skill-name">AWS</span><span class="skill-lvl idea">Have an idea</span></div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 2v10l6.5 3.5"/></svg>
+              AI Tools &amp; Frameworks
+            </h4>
+            <div class="skill-list">
+              <div class="skill-item"><span class="skill-name">Gemini &amp; Groq APIs</span><span class="skill-lvl excellent">Excellent</span></div>
+              <div class="skill-item"><span class="skill-name">Prompt Engineering</span><span class="skill-lvl excellent">Excellent</span></div>
+              <div class="skill-item"><span class="skill-name">Claude CLI (Anthropic)</span><span class="skill-lvl good">Good</span></div>
+              <div class="skill-item"><span class="skill-name">LangChain</span><span class="skill-lvl good">Good</span></div>
+              <div class="skill-item"><span class="skill-name">OpenAI API</span><span class="skill-lvl good">Good</span></div>
+              <div class="skill-item"><span class="skill-name">Deepgram (STT)</span><span class="skill-lvl good">Good</span></div>
+              <div class="skill-item"><span class="skill-name">Raft / PBFT Consensus</span><span class="skill-lvl good">Good</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ ACHIEVEMENTS ═══════════════════ -->
+    <section id="achievements" class="section section-alt">
+      <div class="container">
+        <div class="section-label">Honours &amp; Awards</div>
+        <h2 class="section-title">Achievements &amp; <span class="text-accent">Credentials</span></h2>
+
+        <div class="achievements-grid">
+
+          <div class="achievement-card">
+            <div class="ach-icon isro">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="ach-body">
+              <span class="ach-badge">Government · Space Tech</span>
+              <h4>ISRO Cybersecurity Internship</h4>
+              <p class="ach-org">Indian Space Research Organisation (ISRO)</p>
+              <p class="ach-desc">Completed an intensive programme on <strong>Geo-data Sharing and Cybersecurity</strong> — hands-on exposure to satellite data security infrastructure, encryption pipelines, and government-level defence protocols.</p>
+              <div class="tag-row">
+                <span class="tag">Satellite Security</span>
+                <span class="tag">Geo-data Sharing</span>
+                <span class="tag">Cybersecurity Protocols</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="ach-icon hackathon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="ach-body">
+              <span class="ach-badge">4th Place · 280+ Teams</span>
+              <h4>Siddharth Hackfest — Hackathon</h4>
+              <p class="ach-org">Competitive Machine Learning Hackathon</p>
+              <p class="ach-desc">Designed an ML pipeline predicting <strong>crop yield and agricultural market price volatility</strong> using historical production data and meteorological records, achieving <strong>80% prediction accuracy</strong>.</p>
+              <div class="tag-row">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Predictive Modelling</span>
+                <span class="tag">Data Analytics</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ CONTACT ═══════════════════ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Let's Build Something <span class="text-accent">Together</span></h2>
+        <p class="section-sub">Open to full-time software engineering roles, collaborations, and research discussions. Drop me a message directly.</p>
+
+        <div class="contact-grid">
+
+          <!-- Info Panel -->
+          <div class="contact-info">
+            <h3>Direct Contact</h3>
+            <p>Feel free to reach out via any channel — I respond promptly to emails and LinkedIn messages.</p>
+
+            <div class="contact-links">
+              <a href="mailto:ganeshkillari7624@gmail.com" class="contact-row">
+                <span class="contact-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <div>
+                  <span class="contact-lbl">Email</span>
+                  <span class="contact-val">ganeshkillari7624@gmail.com</span>
+                </div>
+                <button class="copy-btn" data-copy="ganeshkillari7624@gmail.com" title="Copy email" onclick="event.preventDefault();event.stopPropagation()">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </button>
+              </a>
+
+              <a href="tel:+919347561849" class="contact-row">
+                <span class="contact-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <div>
+                  <span class="contact-lbl">Phone</span>
+                  <span class="contact-val">+91 93475 61849</span>
+                </div>
+                <button class="copy-btn" data-copy="+919347561849" title="Copy number" onclick="event.preventDefault();event.stopPropagation()">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </button>
+              </a>
+
+              <a href="https://www.linkedin.com/in/ganesh-killari" target="_blank" rel="noopener noreferrer" class="contact-row">
+                <span class="contact-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </span>
+                <div>
+                  <span class="contact-lbl">LinkedIn</span>
+                  <span class="contact-val">linkedin.com/in/ganesh-killari</span>
+                </div>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ext-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+
+              <a href="https://github.com/ganesh1l-git" target="_blank" rel="noopener noreferrer" class="contact-row">
+                <span class="contact-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </span>
+                <div>
+                  <span class="contact-lbl">GitHub</span>
+                  <span class="contact-val">github.com/ganesh1l-git</span>
+                </div>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ext-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ganeshkillari7624@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-row">
+                <span class="contact-icon" style="color: #ea4335; background: rgba(234,67,53,0.12);">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                </span>
+                <div>
+                  <span class="contact-lbl">Gmail Web</span>
+                  <span class="contact-val">Compose Directly in Browser</span>
+                </div>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ext-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <form id="contactForm" novalidate>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="fname">Name</label>
+                  <input id="fname" type="text" placeholder="Your full name" required>
+                  <span class="err" id="err-name">Please enter your name.</span>
+                </div>
+                <div class="form-group">
+                  <label for="femail">Email</label>
+                  <input id="femail" type="email" placeholder="your@email.com" required>
+                  <span class="err" id="err-email">Please enter a valid email.</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="fsubject">Subject</label>
+                <input id="fsubject" type="text" placeholder="e.g. Software Engineer Opportunity" required>
+                <span class="err" id="err-subject">Please enter a subject.</span>
+              </div>
+              <div class="form-group">
+                <label for="fmessage">Message</label>
+                <textarea id="fmessage" rows="5" placeholder="Hi Ganesh, I'd love to discuss..." required></textarea>
+                <span class="err" id="err-message">Please enter your message.</span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="formSubmitBtn">
+                Send Message
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+              <div id="formStatus" class="form-status" style="display:none;"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-mark">KG</span>
+          <span class="logo-name">Killari Ganesh</span>
+        </a>
+        <p class="footer-tagline">Full Stack Developer &amp; Distributed Systems Researcher.<br>B.Tech CSE · SIET · 2026</p>
+      </div>
+
+      <div class="footer-nav">
+        <div class="footer-col">
+          <span class="footer-col-head">Navigate</span>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#research">Research</a>
+          <a href="#projects">Projects</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-head">More</span>
+          <a href="#skills">Skills</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-head">Links</span>
+          <a href="https://github.com/ganesh1l-git" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/ganesh-killari" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://sales-savvy-gilt.vercel.app/customerhome" target="_blank" rel="noopener noreferrer">SalesSavvy</a>
+          <a href="https://yum-yatra-eosin.vercel.app/" target="_blank" rel="noopener noreferrer">YumYatra</a>
+          <a href="https://placement-flow-psi.vercel.app/" target="_blank" rel="noopener noreferrer">PlacementFlow</a>
+          <a href="https://isjem.com/download/a-multi-layer-framework-for-secure-and-scalable-permissioned-blockchain-integration-in-industrial-iot-systems/" target="_blank" rel="noopener noreferrer">Publication</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Killari Ganesh. All rights reserved.</p>
+        <button id="backTop" class="back-top" aria-label="Back to top">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+          Top
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Resume Modal -->
+  <div class="modal-backdrop" id="resumeModal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <div>
+          <h3 id="modalTitle">Killari Ganesh — Curriculum Vitae</h3>
+          <p>Full Stack Developer · B.Tech CSE · SIET (CGPA 8.3)</p>
+        </div>
+        <button class="modal-close" data-close="resumeModal" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="resume-info-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          Click below to download the full PDF resume.
+        </div>
+        <div class="resume-highlights">
+          <h4>Key Highlights</h4>
+          <ul>
+            <li><strong>Full Stack:</strong> React.js, Django, FastAPI, Spring Boot, REST APIs.</li>
+            <li><strong>Real-Time:</strong> WebSocket systems that cut food delivery latency by 40%.</li>
+            <li><strong>AI / LLMs:</strong> Speech-to-text diarization, resume scoring, interview generation with Gemini, Groq &amp; Deepgram.</li>
+            <li><strong>Research:</strong> Published in ISJEM — Raft-PBFT blockchain security for Industrial IoT (+28% throughput).</li>
+            <li><strong>Awards:</strong> ISRO Cybersecurity Internship &amp; 4th Place at Siddharth Hackfest (280+ teams).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-foot">
+        <a href="./assets/ganesh_resume.pdf" download="Killari_Ganesh_Resume.pdf" class="btn btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download PDF
+        </a>
+        <a href="./assets/ganesh_resume.pdf" target="_blank" class="btn btn-outline">Open in Tab</a>
+        <button class="btn btn-ghost" data-close="resumeModal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toastArea" class="toast-area" aria-live="polite"></div>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
