@@ -1,12 +1,12 @@
 # Killari Ganesh — Professional Developer Portfolio
 
-A modern, high-performance personal portfolio built for **Killari Ganesh (Full Stack Developer & AI Systems Engineer)** featuring a **Senior Developer Purple Grading Aesthetic** (Obsidian Violet + Neon Purple), interactive constellation canvas, real-time metrics, project showcases with architecture deep-dives, and verified personal links.
+A modern, high-performance personal portfolio built for **Killari Ganesh (Full Stack Developer & AI Systems Engineer)** featuring a **Senior Developer Soft Light Blue Grading Aesthetic** (Deep Slate & Calm Azure), real-time metrics, project showcases with architecture deep-dives, and verified personal links.
 
 ---
 
 ## 🌟 Live Features & Highlights
 
-- **Purple Grading Aesthetic**: Sleek obsidian background (`#090414`), neon violet accents (`#a855f7`, `#c084fc`), and multi-layered glassmorphism panels.
+- **Soft Light Blue Grading Aesthetic**: Modern deep slate background (`#0a0e17`), balanced light blue & soft azure accents (`#257ec2`, `#4fa8e8`, `#8ec8f2`), and multi-layered glassmorphism panels.
 - **Dynamic Typing Engine**: Rotates through key specializations:
   - *Full Stack Web Developer*
   - *AI & LLM Solutions Engineer*
